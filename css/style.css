@@ -1,3 +1,10 @@
+/*
+_________
+ reset
+_________
+
+ */
+
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +12,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*
+_________
+header
+_________
+
+ */
+
 .menu-header{
     display: flex;
     justify-content: center;
+    /* position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0; */
     background-color: #ff6900;
     color: white;
 }
 
 .menu-left,.menu-right{
-    width: 180px;
+    width: 275px;
     line-height: 50px;
 }
 
@@ -32,6 +50,12 @@
     text-align: center;
 }
 
+.logo-boolando{
+    height: 25px;
+    width: 110px;
+    margin-top: 10px;
+ }
+
 .menu-right{
     display: flex;
     justify-content: flex-end;
@@ -41,8 +65,108 @@
     margin-right: 10px;
 }
 
-.logo-boolando{
-   height: 25px;
-   width: 110px;
-   margin-top: 10px;
+/*
+_________
+ main 
+_________
+
+ */
+
+.main-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+
+.cards{
+   position: relative;
+   display: block;
+}
+
+.img-cards{
+    width: 400px;
+    height: 590px;
+}
+
+.discount,.sustainability,.fa-heart-circle-plus,.sustainability-1{
+    position: absolute;
+}
+
+.discount,.sustainability,.sustainability-1{
+    color: white;
+    bottom: 40px;
+    font-size: 13px;
+}
+
+.discount{
+    background-color: red;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 5px;
+
+}
+
+.sustainability{
+    left: 55px;
+}
+
+.sustainability-1{
+    bottom: 40px;
+}
+
+.sustainability,.sustainability-1{
+    background-color: green;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.fa-heart-circle-plus{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    top: 10px;
+    right: 0px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.fa-heart-circle-plus:hover{
+    color: red;
+
+}
+
+.name,.price{
+    font-size: small;
+}
+
+.price{
+    color: red;
+    font-weight: bolder;
+}
+
+.price-1{
+    text-decoration: line-through;
+}
+
+.detail{
+    font-weight: bold;
+}
+
+/*
+_________
+ footer
+_________
+
+ */
+footer{
+    background-color: black;
+    height: 100px;
+    margin-top: 50px;
 }
