@@ -2,4 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: center;
+    background-color: #ff6900;
+    color: white;
+}
+
+.menu-left,.menu-right{
+    width: 180px;
+    line-height: 50px;
+}
+
+.menu-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.woman,.man,.kids{
+  margin-right: 10px;
+}
+
+
+.menu-center{
+    width: 700px;
+    text-align: center;
+}
+
+.menu-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-user,.fa-heart,.fa-cart-shopping{
+    margin-right: 10px;
+}
+
+.logo-boolando{
+   height: 25px;
+   width: 110px;
+   margin-top: 10px;
 }
