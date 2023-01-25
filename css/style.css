@@ -22,10 +22,11 @@ _________
 .menu-header{
     display: flex;
     justify-content: center;
-    /* position: fixed;
+    position: fixed;
     z-index: 999;
     left: 0;
-    right: 0; */
+    right: 0;
+    top: 0;
     background-color: #ff6900;
     color: white;
 }
@@ -73,6 +74,8 @@ _________
  */
 
 .main-cards{
+    padding-top: 50px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -87,6 +90,13 @@ _________
 }
 
 .img-cards{
+    width: 400px;
+    height: 590px;
+    display: block;
+}
+
+.img-cards-2{
+    display: none;
     width: 400px;
     height: 590px;
 }
@@ -159,6 +169,7 @@ _________
     font-weight: bold;
 }
 
+
 /*
 _________
  footer
@@ -166,7 +177,45 @@ _________
 
  */
 footer{
+    display: flex;
+    justify-content: space-between;
     background-color: black;
+    color: white;
     height: 100px;
     margin-top: 50px;
+}
+
+.left-footer{
+ margin: 30px 0 0 130px;
+}
+
+.boolean{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.left-footer-bottom{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.info-footer{
+margin-right: 15px;
+}
+.right-footer{
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+.social{
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.right-footer-bottom{
+   margin-top: 10px;
+}
+
+i{
+    margin-right: 5px;
 }
